@@ -15,7 +15,7 @@ namespace RazorMegaDesk.Models
 
         public Desk Desk { get; set; }
 
-        [Display(Name = "Rush Days")]
+        [Display(Name = "Shipping Option")]
         public int RushDays { get; set; } // 3, 5, or 7 days. Normal production time = 14 days.
 
         [Display(Name = "Customer Name")]

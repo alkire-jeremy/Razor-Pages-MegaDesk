@@ -20,7 +20,13 @@
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.DeskMaterial" class="control-label"></label>
-                <input asp-for="deskQuote.DeskMaterial" class="form-control" id="material_input" onchange="preview()" placeholder="Oak, Laminate, Pine, Rosewood, or Veneer." />
+                <select asp-for="deskQuote.DeskMaterial" class="form-control" id="material_input" onchange="preview()">
+                    <option value="Oak">Oak</option>
+                    <option value="Laminate">Laminate</option>
+                    <option value="Pine">Pine</option>
+                    <option value="Rosewood">Rosewood</option>
+                    <option value="Veneer">Veneer</option>
+                </select>
                 <span asp-validation-for="deskQuote.DeskMaterial" class="text-danger"></span>
             </div>
             <img id="material_preview" src="https://images.homedepot-static.com/productImages/9ce3484b-815d-46a9-9ad6-8368091db0d7/svn/bruce-hardwood-samples-ar-142696-64_400_compressed.jpg" alt="Material Preview" width="304" height="236">
@@ -36,12 +42,26 @@
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.NumberOfDrawers" class="control-label"></label>
-                <input asp-for="deskQuote.NumberOfDrawers" class="form-control" placeholder="0 to 7 drawers." />
+                <select asp-for="deskQuote.NumberOfDrawers" class="form-control">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
                 <span asp-validation-for="deskQuote.NumberOfDrawers" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.RushDays" class="control-label"></label>
-                <input asp-for="deskQuote.RushDays" class="form-control" placeholder="3, 5, or 7 days early." />
+                <select asp-for="deskQuote.RushDays" class="form-control">
+                    <option selected value="14">Standard Shipping: 14 days</option>
+                    <option value="7">Rush Order: 7 days</option>
+                    <option value="5">Rush Order: 5 days</option>
+                    <option value="3">Rush Order: 3 days</option>
+                </select>
                 <span asp-validation-for="deskQuote.RushDays" class="text-danger"></span>
             </div>
             <div class="form-group">
