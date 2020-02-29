@@ -7,7 +7,37 @@ a.navbar-brand {
 }
 
 form {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+#myCarousel {
+    margin-top: 8px;
+}
+.carousel-inner .item-active {
+    height: 100%;
+}
+
+.carousel-inner .item {
+    height: 100%;
+    opacity: 1;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+.carousel-caption {
+    height: 70%;
+    font-size: 16px;
+}
+
+/*     -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */
+
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
 }
 
 .form-group {
@@ -35,7 +65,15 @@ audio {
     opacity: 0.6;
     background-color: black;
     box-shadow: 5px 5px 5px cyan;
+    margin-bottom: 0px;
 }
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
 
 img {
     margin-bottom: 15px;
@@ -120,6 +158,7 @@ h1 {
 -------------------------------------------------- */
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 @media (min-width: 768px) {
