@@ -8,71 +8,83 @@
 <h1>Index</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create" class="button_link" id="create_link">Create New</a>
 </p>
+
+<form>
+    <p>
+        Customer Name: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.DeskQuote[0].DeskMaterial)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DeskQuote[0].RushDays)
-            </th>
-            <th>
+    <tr>
+        <th>
+            <a asp-page="./Index" asp-route-sortOrder="@Model.NameSort">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].CustomerName)
-            </th>
-            <th>
+            </a>
+        </th>
+        <th>
+            <a asp-page="./Index" asp-route-sortOrder="@Model.DateSort">
                 @Html.DisplayNameFor(model => model.DeskQuote[0].QuoteDate)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DeskQuote[0].QuoteTotal)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DeskQuote[0].Width)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DeskQuote[0].Depth)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DeskQuote[0].NumberOfDrawers)
-            </th>
-            <th></th>
-        </tr>
+            </a>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeskQuote[0].DeskMaterial)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeskQuote[0].RushDays)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeskQuote[0].QuoteTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeskQuote[0].Width)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeskQuote[0].Depth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeskQuote[0].NumberOfDrawers)
+        </th>
+        <th></th>
+    </tr>
     </thead>
     <tbody>
 @foreach (var item in Model.DeskQuote) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.DeskMaterial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.RushDays)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CustomerName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.QuoteDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.QuoteTotal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Width)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Depth)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NumberOfDrawers)
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustomerName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuoteDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeskMaterial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RushDays)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QuoteTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Width)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Depth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfDrawers)
+        </td>
+        <td>
+            <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
+            <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
+            <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+        </td>
+    </tr>
 }
     </tbody>
 </table>

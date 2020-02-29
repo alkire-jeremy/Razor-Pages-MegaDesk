@@ -10,6 +10,7 @@ namespace RazorMegaDesk.Models
         public int ID { get; set; }
 
         [Display(Name = "Desk Material")]
+        [Required]
         public string DeskMaterial { get; set; }
 
         public Desk Desk { get; set; }
@@ -18,6 +19,7 @@ namespace RazorMegaDesk.Models
         public int RushDays { get; set; } // 3, 5, or 7 days. Normal production time = 14 days.
 
         [Display(Name = "Customer Name")]
+        [Required]
         public string CustomerName { get; set; }
 
         [DataType(DataType.Date)]
@@ -27,10 +29,13 @@ namespace RazorMegaDesk.Models
         [Display(Name = "Quote Total")]
         public double QuoteTotal { get; set; }
 
+        [Range(24, 96 )]
         public int Width { get; set; }
+        [Range(12, 48)]
         public int Depth { get; set; }
 
         [Display(Name = "Number of Drawers")]
+        [Range(0, 7)]
         public int NumberOfDrawers { get; set; }
 
         public const int SQUAREPRICE = 1;

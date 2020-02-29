@@ -43,6 +43,7 @@ namespace RazorMegaDesk.Pages.DeskQuotes
             return RedirectToPage("./Index");
         }
 
+        // METHOD TO CALCULATE QUOTE TOTAL
         public double CalculateQuoteTotal(DeskQuote quote)
         {
             double rushPrice = 0;
