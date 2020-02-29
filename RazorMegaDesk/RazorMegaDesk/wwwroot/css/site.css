@@ -55,7 +55,7 @@ audio {
 .navbar {
     opacity: 0.6;
     background-color: black;
-    box-shadow: 5px 5px 5px #56073d;
+    box-shadow: 5px 5px 5px cyan;
 }
 
 img {
@@ -115,7 +115,7 @@ a {
 }
 
 body {
-    background: url('http://faintdev.net/academic/images/purple_exposure.jpg') no-repeat center center fixed;
+    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Dark-Seamless-Free-Photoshop-Wood-Background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -186,5 +186,5 @@ body {
     line-height: 60px; /* Vertically center the text there */
     opacity: 0.6;
     background-color: black;
-    box-shadow: 5px -5px 5px #56073d;
+    box-shadow: 5px -5px 5px cyan;
 }
