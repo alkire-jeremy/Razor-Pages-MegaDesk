@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a class="nav-link" asp-area="" asp-page="/DeskQuotes/Index">Create a Desk</a>
+                        <a class="nav-link" id="create_desk_link" asp-area="" asp-page="/DeskQuotes/Index">Create a Desk</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -50,13 +50,16 @@
 </header>
 
 <div class="container">
-        <partial name="_CookieConsentPartial" />
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+    <partial name="_CookieConsentPartial" />
+    <main role="main" class="pb-3">
+        @RenderBody()
+        <audio controls autoplay>
+            <source src="http://faintdev.net/academic/music/rpg_playlist.mp3" type="audio/mpeg">
+        </audio>
+    </main>
+</div>
 
-    <footer class="footer text-muted">
+<footer class="footer text-muted">
         <div class="container">
             &copy; 2020 - RazorMegaDesk
         </div>
