@@ -15,41 +15,41 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="deskQuote.CustomerName" class="control-label"></label>
-                <input asp-for="deskQuote.CustomerName" class="form-control" />
+                <input asp-for="deskQuote.CustomerName" class="form-control" placeholder="Enter your full name here."/>
                 <span asp-validation-for="deskQuote.CustomerName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.DeskMaterial" class="control-label"></label>
-                <input asp-for="deskQuote.DeskMaterial" class="form-control" />
+                <input asp-for="deskQuote.DeskMaterial" class="form-control" placeholder="Oak, Laminate, Pine, Rosewood, or Veneer."/>
                 <span asp-validation-for="deskQuote.DeskMaterial" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.Width" class="control-label"></label>
-                <input asp-for="deskQuote.Width" class="form-control" />
+                <input asp-for="deskQuote.Width" class="form-control" placeholder="24 to 96 inches."/>
                 <span asp-validation-for="deskQuote.Width" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.Depth" class="control-label"></label>
-                <input asp-for="deskQuote.Depth" class="form-control" />
+                <input asp-for="deskQuote.Depth" class="form-control" placeholder="12 to 48 inches."/>
                 <span asp-validation-for="deskQuote.Depth" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.NumberOfDrawers" class="control-label"></label>
-                <input asp-for="deskQuote.NumberOfDrawers" class="form-control" />
+                <input asp-for="deskQuote.NumberOfDrawers" class="form-control" placeholder="0 to 7 drawers."/>
                 <span asp-validation-for="deskQuote.NumberOfDrawers" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.RushDays" class="control-label"></label>
-                <input asp-for="deskQuote.RushDays" class="form-control" />
+                <input asp-for="deskQuote.RushDays" class="form-control" placeholder="3, 5, or 7 days early."/>
                 <span asp-validation-for="deskQuote.RushDays" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="deskQuote.QuoteDate" class="control-label"></label>
-                <input asp-for="deskQuote.QuoteDate" class="form-control" />
+                <input asp-for="deskQuote.QuoteDate" class="form-control"/>
                 <span asp-validation-for="deskQuote.QuoteDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Create" class="btn btn-primary"/>
             </div>
         </form>
     </div>

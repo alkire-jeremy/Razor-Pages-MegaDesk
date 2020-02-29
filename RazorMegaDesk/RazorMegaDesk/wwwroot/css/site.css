@@ -35,6 +35,10 @@ form {
     margin-bottom: 80px;
 }
 
+.form-group {
+    width: 100%;
+}
+
 dl {
     margin-bottom: 80px;
 }
