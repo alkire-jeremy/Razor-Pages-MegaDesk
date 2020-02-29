@@ -10,6 +10,14 @@ form {
     margin-bottom: 40px;
 }
 
+.customer_name {
+    margin-top: 40px;
+}
+
+input {
+    color: black;
+}
+
 #myCarousel {
     margin-top: 8px;
 }
