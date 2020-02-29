@@ -27,6 +27,7 @@ namespace RazorMegaDesk.Models
         public DateTime QuoteDate { get; set; }
 
         [Display(Name = "Quote Total")]
+        [DataType(DataType.Currency)]
         public double QuoteTotal { get; set; }
 
         [Range(24, 96 )]

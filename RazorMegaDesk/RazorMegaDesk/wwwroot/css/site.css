@@ -55,7 +55,7 @@ audio {
 .navbar {
     opacity: 0.6;
     background-color: black;
-    box-shadow: 5px 5px 5px cyan;
+    box-shadow: 5px 5px 5px #f88c27;
 }
 
 img {
@@ -80,17 +80,17 @@ img {
 }
 
 a {
-    color: cyan;
+    color: #f88c27;
 }
 
     a:hover {
         text-decoration: none;
-        color: purple;
+        color: #c27023;
     }
 
 .button_link {
     border-style: outset;
-    border-color: darkcyan;
+    border-color: #f88c27;
     padding: 6px;
     margin: 4px;
     background-color: black;
@@ -102,9 +102,21 @@ a {
 }
 
 /*Override bootstrap's limitation on container width.*/
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .container {
         max-width: 80%;
+    }
+}
+
+@media (max-width: 1200px) {
+    table {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    table {
+        font-size: 8px;
     }
 }
 
@@ -114,8 +126,10 @@ a {
     }
 }
 
+
+/* https://images.freecreatives.com/wp-content/uploads/2016/02/Dark-Seamless-Free-Photoshop-Wood-Background.jpg */
 body {
-    background: url('https://images.freecreatives.com/wp-content/uploads/2016/02/Dark-Seamless-Free-Photoshop-Wood-Background.jpg') no-repeat center center fixed;
+    background: url('https://www.photohdx.com/images/2016/03/dark-red-wood-texture-background.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -186,5 +200,5 @@ body {
     line-height: 60px; /* Vertically center the text there */
     opacity: 0.6;
     background-color: black;
-    box-shadow: 5px -5px 5px cyan;
+    box-shadow: 5px -5px 5px #f88c27;
 }
