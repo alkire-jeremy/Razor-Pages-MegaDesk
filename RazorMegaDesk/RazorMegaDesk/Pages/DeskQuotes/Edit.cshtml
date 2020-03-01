@@ -13,37 +13,37 @@
     <div class="col-md-4">
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="DeskQuote.ID" />
+            <input type="hidden" asp-for="deskQuote.ID" />
             <div class="form-group">
-                <label asp-for="DeskQuote.CustomerName" class="control-label"></label>
-                <input asp-for="DeskQuote.CustomerName" class="form-control" />
-                <span asp-validation-for="DeskQuote.CustomerName" class="text-danger"></span>
+                <label asp-for="deskQuote.CustomerName" class="control-label"></label>
+                <input asp-for="deskQuote.CustomerName" class="form-control" />
+                <span asp-validation-for="deskQuote.CustomerName" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.DeskMaterial" class="control-label"></label>
-                <select asp-for="DeskQuote.DeskMaterial" class="form-control" id="material_input" onchange="preview()">
+                <label asp-for="deskQuote.DeskMaterial" class="control-label"></label>
+                <select asp-for="deskQuote.DeskMaterial" class="form-control" id="material_input" onchange="preview()">
                     <option value="Oak">Oak</option>
                     <option value="Laminate">Laminate</option>
                     <option value="Pine">Pine</option>
                     <option value="Rosewood">Rosewood</option>
                     <option value="Veneer">Veneer</option>
                 </select>
-                <span asp-validation-for="DeskQuote.DeskMaterial" class="text-danger"></span>
+                <span asp-validation-for="deskQuote.DeskMaterial" class="text-danger"></span>
             </div>
             <img id="material_preview" src="https://images.homedepot-static.com/productImages/9ce3484b-815d-46a9-9ad6-8368091db0d7/svn/bruce-hardwood-samples-ar-142696-64_400_compressed.jpg" alt="Material Preview" width="304" height="236">
             <div class="form-group">
-                <label asp-for="DeskQuote.Width" class="control-label"></label>
-                <input asp-for="DeskQuote.Width" class="form-control" />
-                <span asp-validation-for="DeskQuote.Width" class="text-danger"></span>
+                <label asp-for="deskQuote.Width" class="control-label"></label>
+                <input asp-for="deskQuote.Width" class="form-control" />
+                <span asp-validation-for="deskQuote.Width" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.Depth" class="control-label"></label>
-                <input asp-for="DeskQuote.Depth" class="form-control" />
-                <span asp-validation-for="DeskQuote.Depth" class="text-danger"></span>
+                <label asp-for="deskQuote.Depth" class="control-label"></label>
+                <input asp-for="deskQuote.Depth" class="form-control" />
+                <span asp-validation-for="deskQuote.Depth" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.NumberOfDrawers" class="control-label"></label>
-                <select asp-for="DeskQuote.NumberOfDrawers" class="form-control">
+                <label asp-for="deskQuote.NumberOfDrawers" class="control-label"></label>
+                <select asp-for="deskQuote.NumberOfDrawers" class="form-control">
                     <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -53,22 +53,22 @@
                     <option value="6">6</option>
                     <option value="7">7</option>
                 </select>
-                <span asp-validation-for="DeskQuote.NumberOfDrawers" class="text-danger"></span>
+                <span asp-validation-for="deskQuote.NumberOfDrawers" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.RushDays" class="control-label"></label>
-                <select asp-for="DeskQuote.RushDays" class="form-control">
+                <label asp-for="deskQuote.RushDays" class="control-label"></label>
+                <select asp-for="deskQuote.RushDays" class="form-control">
                     <option value="14">Standard Shipping: 14 days</option>
                     <option value="7">Rush Order: 7 days</option>
                     <option value="5">Rush Order: 5 days</option>
                     <option value="3">Rush Order: 3 days</option>
                 </select>
-                <span asp-validation-for="DeskQuote.RushDays" class="text-danger"></span>
+                <span asp-validation-for="deskQuote.RushDays" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="DeskQuote.QuoteDate" class="control-label"></label>
-                <input asp-for="DeskQuote.QuoteDate" class="form-control" />
-                <span asp-validation-for="DeskQuote.QuoteDate" class="text-danger"></span>
+                <label asp-for="deskQuote.QuoteDate" class="control-label"></label>
+                <input asp-for="deskQuote.QuoteDate" class="form-control" />
+                <span asp-validation-for="deskQuote.QuoteDate" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
