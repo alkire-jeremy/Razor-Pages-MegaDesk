@@ -23,7 +23,7 @@ namespace RazorMegaDesk.Models
         public string CustomerName { get; set; }
 
         [DataType(DataType.Date)]
-        [Display(Name = "Quote Date")]
+        [Display(Name = "Date of Quote")]
         public DateTime QuoteDate { get; set; }
 
         [Display(Name = "Quote Total")]

@@ -22,9 +22,3 @@ function preview() {
     }
 }
 
-var click = new Audio();
-click.src = "http://faintdev.net/academic/sounds/bg2click.mp3";
-
-function playClick() {
-    click.play();
-}

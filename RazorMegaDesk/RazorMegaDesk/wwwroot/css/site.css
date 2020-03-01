@@ -56,18 +56,6 @@ dl {
     margin-bottom: 80px;
 }
 
-audio {
-    position: relative;
-    margin-top: 50px;
-    top: 83%;
-    left: 34%;
-}
-
-@media only screen and (max-width: 1900px) {
-    audio {
-        display: none;
-    }
-}
 
 .navbar {
     opacity: 0.6;
@@ -96,18 +84,6 @@ img {
     margin-bottom: 200px;
 }
 
-audio {
-    position: relative;
-    margin-top: 50px;
-    top: 83%;
-    left: 34%;
-}
-
-@media only screen and (max-width: 1900px) {
-    audio {
-        display: none;
-    }
-}
 
 a {
     color: cyan;
